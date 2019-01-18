@@ -40,9 +40,9 @@ public struct MessageIndex {
     }
 }
 
-internal extension MessageIndex {
+extension MessageIndex {
 
-    internal func encode() -> Data {
+    func encode() -> Data {
         var encode = Data()
 
         let selected: UInt16 = isSelected == true ? 0x8000 : 0
@@ -61,7 +61,7 @@ internal extension MessageIndex {
     ///   - definition: Field Definition Message
     ///   - data: Field Data Message
     /// - Returns: Message Index
-    internal static func decode(decoder: inout DecodeData, endian: Endian, definition: FieldDefinition, data: FieldData) -> MessageIndex? {
+    static func decode(decoder: inout DecodeData, endian: Endian, definition: FieldDefinition, data: FieldData) -> MessageIndex? {
 
         let value = endian == .little ? decoder.decodeUInt16(data.fieldData).littleEndian : decoder.decodeUInt16(data.fieldData).bigEndian
         
