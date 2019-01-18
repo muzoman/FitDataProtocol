@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
 Swift version of the Garmin Flexible and Interoperable Data Transfer Protocol.
                        DESC
 
-  s.homepage            = 'https://github.com/FitnessKit/FitDataProtocol'
+  s.homepage            = 'https://github.com/muzoman/FitDataProtocol'
   s.documentation_url   = 'https://fitnesskit.github.io/FitDataProtocol/'
   s.license             = { :type => 'MIT', :file => 'LICENSE' }
   s.author              = { 'Kevin A. Hoogheem' => 'kevin@hoogheem.net' }
-  s.source              = { :git => 'https://github.com/FitnessKit/FitDataProtocol.git', :tag => s.version.to_s }
+  s.source              = { :git => 'https://github.com/muzoman/FitDataProtocol.git', :tag => s.version.to_s }
   s.swift_version       = '4.2'
 
 #Targets
