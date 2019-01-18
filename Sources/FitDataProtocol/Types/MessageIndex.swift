@@ -34,7 +34,7 @@ public struct MessageIndex {
     /// Index
     private(set) public var index: UInt16
 
-    internal init(value: UInt16) {
+    init(value: UInt16) {
         self.isSelected = (value & 0x8000) == 0x8000
         self.index = (value & 0x0FFF)
     }
